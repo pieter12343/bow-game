@@ -19,7 +19,7 @@ public class AIHP : MonoBehaviour
         currentHealth -= amount;
         if(currentHealth <= 0)
         {
-
+            Destroy(gameObject);
         }
     }
 }
