@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6319815142512983895}
   - component: {fileID: 2466406516573788926}
   - component: {fileID: 7138985306198313452}
-  - component: {fileID: 4768849422976305928}
   - component: {fileID: 409542477144364631}
   - component: {fileID: 5209980019821302479}
+  - component: {fileID: 940227779429444506}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5961215727052638198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123,21 +123,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4768849422976305928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5961215727052638198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f46e342bfc9da14f91a39cfaf626695, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 8927544956087717251}
-  - {fileID: 5813152429438099662}
 --- !u!114 &409542477144364631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +153,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &940227779429444506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5961215727052638198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59eb845f1228bd4478df9da0064f9503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpots:
+  - {fileID: 8927544956087717251}
+  - {fileID: 5813152429438099662}
+  distToPlayer: 5
+  t_minStrafe: -5
+  t_maxStrafe: 5
+  chaseRadius: 20
+  facePlayerFactor: 20
+  startWaitTime: 1
+  strafeLeft: {fileID: 0}
+  strafeRight: {fileID: 0}
+  AIHP: {fileID: 409542477144364631}
 --- !u!1 &7192461440613649281
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8291115681260617773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -257,7 +266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8927544956087717250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.6, y: 1, z: -18.97}
+  m_LocalPosition: {x: 16.6, y: 0, z: -18.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
