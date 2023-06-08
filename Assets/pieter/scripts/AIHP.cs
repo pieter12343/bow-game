@@ -11,17 +11,15 @@ public class AIHP : MonoBehaviour
     void Start()
     {
         currentHealth = MaxHealth;
-
     }
-    private void Update(int amount)
+
+    void takeDamage(int amount)
     {
         currentHealth -= amount;
-        if (currentHealth <= 0)
+        if(currentHealth <= 0)
         {
             Destroy(gameObject);
         }
     }
-
-
     
 }

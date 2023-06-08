@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 7138985306198313452}
   - component: {fileID: 409542477144364631}
   - component: {fileID: 5209980019821302479}
-  - component: {fileID: 940227779429444506}
+  - component: {fileID: 3865759343173381376}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,7 +153,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &940227779429444506
+--- !u!114 &3865759343173381376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,21 +162,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 5961215727052638198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59eb845f1228bd4478df9da0064f9503, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f46e342bfc9da14f91a39cfaf626695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpots:
+  AIHP: {fileID: 409542477144364631}
+  waypoints:
   - {fileID: 8927544956087717251}
   - {fileID: 5813152429438099662}
+  moveSpots: []
   distToPlayer: 5
-  t_minStrafe: -5
-  t_maxStrafe: 5
+  t_minStrafe: 0
+  t_maxStrafe: 0
   chaseRadius: 20
   facePlayerFactor: 20
   startWaitTime: 1
-  strafeLeft: {fileID: 0}
-  strafeRight: {fileID: 0}
-  AIHP: {fileID: 409542477144364631}
 --- !u!1 &7192461440613649281
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +187,7 @@ GameObject:
   - component: {fileID: 7696749733523451510}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

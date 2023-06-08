@@ -22,9 +22,6 @@ public class patroller : MonoBehaviour
     public float facePlayerFactor = 20f;
     private float waitTime;
     public float startWaitTime = 1f;
-    private int randomStrafeDir;
-    public Transform strafeLeft;
-    public Transform strafeRight;
     public AIHP AIHP;
 
     private void Awake()
