@@ -24,6 +24,7 @@ public class movementPlayer : MonoBehaviour
         }
     }
 
+    //hoeft niet perse
     public void TakeDamage()
     {
         health -= amount;
