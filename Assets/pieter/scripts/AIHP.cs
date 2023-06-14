@@ -6,7 +6,7 @@ public class AIHP : MonoBehaviour
 {
     public int MaxHealth = 1;
     public int currentHealth;
-
+    public GameObject particle;
 
     void Start()
     {
@@ -16,6 +16,7 @@ public class AIHP : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            Instantiate(particle, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

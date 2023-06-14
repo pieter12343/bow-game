@@ -139,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 1
   currentHealth: 0
+  particle: {fileID: 186482, guid: 9d2dddaae5c812841accc43e4da1fccd, type: 3}
 --- !u!54 &5209980019821302479
 Rigidbody:
   m_ObjectHideFlags: 0
