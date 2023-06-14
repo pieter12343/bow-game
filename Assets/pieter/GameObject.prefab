@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82cdd83eb8cd0e94eab9e7076cde6ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 100
+  MaxHealth: 1
   currentHealth: 0
 --- !u!54 &5209980019821302479
 Rigidbody:
@@ -171,8 +171,6 @@ MonoBehaviour:
   - {fileID: 5813152429438099662}
   moveSpots: []
   distToPlayer: 5
-  t_minStrafe: 0
-  t_maxStrafe: 0
   chaseRadius: 20
   facePlayerFactor: 20
   startWaitTime: 1
