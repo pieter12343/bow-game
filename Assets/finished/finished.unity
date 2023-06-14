@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 457b7461258a9d643b4298a7c8c8d0d5, type: 2}
 --- !u!1001 &392785122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -340,6 +340,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fc6cf9f42be8bdc4eb30e6df2d3765a8, type: 2}
+    - target: {fileID: -7029948723529949830, guid: 4d100f958c7cab24ea9c45a649755b41,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -6927256155320195693, guid: 4d100f958c7cab24ea9c45a649755b41,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1630,7 +1635,7 @@ GameObject:
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!154 &770422995
@@ -1883,7 +1888,7 @@ PrefabInstance:
     - target: {fileID: 4595848228816007819, guid: 5f40513e058cf36439b1b93ac5ccd2d2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.64
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 4595848228816007819, guid: 5f40513e058cf36439b1b93ac5ccd2d2,
         type: 3}
