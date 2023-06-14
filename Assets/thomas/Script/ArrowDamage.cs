@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class ArrowDamage : MonoBehaviour
 {
-    [SerializeField] float damage = 10f;
+    [SerializeField] int damage = 10;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
               AIHP enemyHealth = other.gameObject.GetComponent<AIHP>();
-            enemyHealth.TakeDamage(damage);
+            enemyHealth.takeDamage(damage);
+            Destroy(this.gameObject);
         }
     }
 }
